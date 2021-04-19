@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class BlankFragment extends Fragment {
 
-    private static final String ARG_TEXT = "本地音乐";
+    private static final String ARG_TEXT = "param";
 
     private String mTextString;
     View rootView;
@@ -40,7 +40,7 @@ public class BlankFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (rootView==null){
-            return inflater.inflate(R.layout.fragment_blank, container, false);
+            rootView = inflater.inflate(R.layout.fragment_blank, container, false);
         }
         initView();
         return rootView;

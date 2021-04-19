@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:background="#F44337"
+    android:minHeight="50sp"
+    android:layout_gravity="center_vertical"
+    android:layout_alignParentTop="true"
+    android:id="@+id/topMenu">
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_menu"
+        android:minWidth="30sp"
+        android:minHeight="30sp"
+        android:layout_marginLeft="10sp"/>
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_menu_search"
+        android:minWidth="30sp"
+        android:minHeight="30sp"
+        android:layout_marginRight="10sp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/id_tab_localMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地音乐"
+            android:gravity="center"
+            android:background="@drawable/tab_menu"
+            android:textColor="#FFFFFF"
+            android:width="115sp"
+            android:height="50sp"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/id_tab_onlineMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/id_tab_localMusic"
+            android:gravity="center"
+            android:text="在线音乐"
+            android:width="115sp"
+            android:height="50sp"
+            android:background="@drawable/tab_menu"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
