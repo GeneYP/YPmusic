@@ -38,8 +38,8 @@
             android:layout_height="wrap_content"
             android:text="本地音乐"
             android:gravity="center"
-            android:background="@drawable/tab_menu"
-            android:textColor="#FFFFFF"
+            android:background="@color/theme"
+            android:textColor="@drawable/tab_menu"
             android:width="115sp"
             android:height="50sp"
             android:textSize="20sp" />
@@ -52,8 +52,8 @@
             android:text="在线音乐"
             android:width="115sp"
             android:height="50sp"
-            android:background="@drawable/tab_menu"
-            android:textColor="#FFFFFF"
+            android:background="@color/theme"
+            android:textColor="@drawable/tab_menu"
             android:textSize="20sp" />
     </RelativeLayout>
 
