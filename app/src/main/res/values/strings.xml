@@ -2,4 +2,6 @@
     <string name="app_name">YP Music</string>
     <string name="music_name">歌曲名称</string>
     <string name="author_name">音乐家</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

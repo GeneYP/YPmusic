@@ -67,6 +67,18 @@
                 android:textSize="20sp" />
         </RelativeLayout>
     </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_viewpager"/>
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainBoard"
+        android:layout_below="@id/topMenu"/>
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80sp"
