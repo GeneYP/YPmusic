@@ -68,10 +68,11 @@
         </RelativeLayout>
     </RelativeLayout>
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/id_viewpager"/>
+        android:id="@+id/viewpager"/>
+
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
