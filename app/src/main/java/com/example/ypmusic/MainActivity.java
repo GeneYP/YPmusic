@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //设置顶部菜单栏
-        android.support.v4.app.ActionBar actionBar = getSupportActionBar();
+//        android.support.v4.app.ActionBar actionBar = getSupportActionBar();
     }
 }

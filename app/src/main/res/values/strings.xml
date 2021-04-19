@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">YPMusic</string>
+    <string name="app_name">YP Music</string>
+    <string name="music_name">歌曲名称</string>
+    <string name="author_name">音乐家</string>
 </resources>
