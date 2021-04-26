@@ -7,79 +7,21 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager"/>
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/topMenu"
+        android:layout_above="@+id/playBar">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:layout_weight="1"/>
+    </androidx.viewpager.widget.ViewPager>
 
-    <include layout="@layout/toplayout"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="80sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@color/white">
-        <ImageButton
-            android:id="@+id/coverImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:background="@mipmap/default_cover"
-            android:minWidth="50sp"
-            android:minHeight="50sp"
-            android:layout_marginLeft="10sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/musicName"
-            android:text="@string/music_name"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_toRightOf="@id/coverImg"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="10sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/authorName"
-            android:text="@string/author_name"
-            android:textSize="16sp"
-            android:textColor="@color/gray"
-            android:layout_below="@id/musicName"
-            android:layout_toRightOf="@id/coverImg"
-            android:layout_marginLeft="10sp"/>
-        <ImageButton
-            android:id="@+id/musicList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="@mipmap/ic_play_bar_btn_playlist"
-            android:minWidth="50sp"
-            android:minHeight="50sp" />
-        <ImageButton
-            android:id="@+id/playNext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@mipmap/ic_play_bar_btn_next"
-            android:minWidth="50sp"
-            android:minHeight="50sp"
-            android:layout_toLeftOf="@id/musicList"/>
-        <ImageButton
-            android:id="@+id/playStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@mipmap/ic_play_bar_btn_play"
-            android:minWidth="50sp"
-            android:minHeight="50sp"
-            android:layout_toLeftOf="@id/playNext"/>
-
-    </RelativeLayout>
+    <include layout="@layout/top_layout"/>
+    <include layout="@layout/playbar_layout"/>
 
 
 </RelativeLayout>

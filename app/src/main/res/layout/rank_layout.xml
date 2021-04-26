@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rankLayout">
+
+    <ImageView
+        android:layout_width="128sp"
+        android:layout_height="128sp"
+        android:id="@+id/rankImg"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankName1"
+        android:layout_toRightOf="@id/rankImg"
+        android:layout_marginTop="32sp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:hint="歌曲名称"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankName2"
+        android:layout_toRightOf="@id/rankImg"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/rankName1"
+        android:hint="歌曲名称"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankName3"
+        android:layout_toRightOf="@id/rankImg"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/rankName2"
+        android:hint="歌曲名称"/>
+
+</RelativeLayout>
